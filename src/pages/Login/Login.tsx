@@ -3,6 +3,7 @@ import logo from "../../assets/login-logo.png";
 import image from "../../assets/login-image.png";
 import { Link, useNavigation } from "react-router-dom";
 import { SyncLoader } from "react-spinners";
+import "./Login.scss";
 
 const Login = () => {
   const [data, setData] = useState({email: '', password: ''});
@@ -22,7 +23,7 @@ const Login = () => {
     <div className="login-container">
       <div className="leftside-container">
         <img className="logo" src={logo} alt="" />
-        <img className="logo" src={image} alt="" />
+        <img className="lendr-image" src={image} alt="" />
       </div>
       <div className="rightside-container">
         <img className="rightside-logo" src={logo} alt="" />

@@ -1,0 +1,208 @@
+.login-container {
+    display: flex;
+    max-width: 100%;
+    height: 100vh;
+    font-family: "Avenir Next Cyr", sans-serif;
+  
+    .leftside-container {
+      background-color: #ffffff;;
+      width: 50%;
+      padding-top: 7%;
+      padding-left: 4.5%;
+      // border: 1px solid red;
+  
+      .logo {
+        margin-left: 1.875rem;
+        margin-bottom: 8.6875rem;
+        cursor: pointer;
+      }
+      .lendr-image {
+        cursor: pointer;
+        width: 100%;
+      }
+    }
+  
+    .rightside-container {
+      background-color: #ffffff;
+      width: 50%;
+      padding-left: 6.7%;
+      box-shadow: -15px 0px 90px 0px rgba(0, 0, 0, 0.03);
+      -webkit-box-shadow: -15px 0px 90px 0px rgba(0, 0, 0, 0.03);
+      -moz-box-shadow: -15px 0px 90px 0px rgba(0, 0, 0, 0.03);
+  
+      .rightside-logo {
+        display: none;
+      }
+      .welcome-text {
+        margin: 0;
+        margin-top: 44%;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #213f7d;
+        letter-spacing: -0.09rem;
+      }
+  
+      .login-text {
+        font-family: "Avenir Next Cyr", sans-serif;
+        font-size: 1.25rem;
+        color: #545f7d;
+        margin-bottom: 3.75rem;
+      }
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      width: 70%;
+      font-family:  "Avenir Next Cyr", sans-serif;
+  
+      input:-webkit-autofill {
+        transition: background-color 1s 5000s;
+      }
+  
+      .email-input {
+        border: 1px solid #545f7d26;
+        border-radius: 0.3125rem;
+        padding: 1.09rem 1rem 0.78125rem 1rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: #545f7d;
+        &:focus {
+            outline: none;
+          }
+          &::placeholder {
+            color: #545f7d5d;
+            font-size: 0.875rem;
+          }
+      }
+  
+      .password-container {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #545f7d26;
+        padding: 1.09rem 1rem 0.78125rem 1rem;
+        border-radius: 0.3125rem;
+        color: #213f7d;
+  
+        .password-input {
+          border: none;
+          width: 90%;
+          font-weight: 600;
+          &:focus {
+            outline: none;
+          }
+          &::placeholder {
+            color: #545f7d5d;
+            font-size: 0.875rem;
+          }
+        }
+  
+        .show-password-button {
+          color: #39cdcc;
+          background: none;
+          border: none;
+          font-size: 0.75rem;
+          padding: 0;
+          margin: 0;
+          cursor: pointer;
+          user-select: none;
+        }
+      }
+  
+      .forgot-password-text {
+        color: #39cdcc;
+        cursor: pointer;
+        user-select: none;
+        transition: all 0.2s ease-in-out;
+  
+        &:hover {
+          opacity: 0.8;
+        }
+        &:active {
+          opacity: 0.5;
+        }
+      }
+  
+      .link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #39cdcc;
+        color: #ffffff;;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        padding: 1rem 0rem;
+        transition: all 0.2s ease-in-out;
+        border: none;
+        &:hover {
+          opacity: 0.8;
+        }
+        &:active {
+          opacity: 0.6;
+        }
+      }
+  
+      .login-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #afebeb;
+        color: #ffffff;;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        padding: 1rem 0rem;
+        transition: all 0.2s ease-in-out;
+        border: none;
+        cursor: not-allowed;
+      }
+    }
+  
+    @media (max-width: 1024px) {
+      height: 100vh;
+      margin: auto;
+  
+      .left-side {
+        display: none;
+      }
+      .right-side {
+        padding-left: 0;
+        width: 100%;
+        margin: auto;
+        box-shadow: none;
+  
+        .right-side-image {
+          display: block;
+          margin: auto auto 3rem auto;
+        }
+        .welcome {
+          margin: 0 0 1.5rem 0;
+          text-align: center;
+          font-size: 2rem;
+          font-weight: 700;
+          color: #213f7d;
+          letter-spacing: -0.09rem;
+        }
+        .login-text {
+          font-family: #39cdcc;
+          font-size: 1rem;
+          color: #545f7d;
+          margin: auto auto 2.5rem auto;
+          text-align: center;
+          // border: 1px solid red;
+        }
+  
+        form {
+          max-width: 70%;
+          margin: auto;
+        }
+      }
+    }
+    @media (max-width: 420px) {
+      form {
+        max-width: 60%;
+        margin: auto;
+      }
+    }
+  }
+  
