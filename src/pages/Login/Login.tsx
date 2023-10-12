@@ -67,7 +67,7 @@ const Login = () => {
                 {state === "loading" ? (
                     <SyncLoader size={"0.8rem"} color="#ffffff" />
                 ) : (
-                    'LOG IN'
+                    'LOGIN'
                 )}
             </Link>
           )}
