@@ -5,6 +5,11 @@ export const dashboardMenuState = atom({
     default: "Users",
 });
 
+export const userDetailNavState = atom({
+  key: "userDetailNavState",
+  default: "General Details",
+});
+
 export const modalFilterState = atom({
     key: "modalFilterState",
     default: {

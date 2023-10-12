@@ -18,7 +18,7 @@ function App() {
     createRoutesFromElements(
       <Route path='/' element={<RootOutlet />}>
         <Route index element={<Login />} />
-        <Route path='/dashboard' element={<Dashboard />} errorElement={DashboardErrorPage} />
+        <Route path='/dashboard' element={<Dashboard />}  />
         <Route
           path="/user-details/:id"
           element={<UserDetails />}
