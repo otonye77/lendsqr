@@ -10,7 +10,7 @@ const UserInformations = () => {
     <div className="user-information-container">
       <UsersCard name="USERS" icon={users} amount={2452} />
       <UsersCard name="ACTIVE USERS" icon={activeUsers} amount={2452} />
-      <UsersCard name="USERS WITH LOANS" icon={usersWithLoans} amount={2452} />
+      <UsersCard name="USERS WITH LOANS" icon={usersWithLoans} amount={12452} />
       <UsersCard
         name="USERS WITH SAVINGS"
         icon={usersWithSavings}
