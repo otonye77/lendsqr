@@ -1,5 +1,6 @@
 import { useRecoilState } from "recoil";
 import { useNavigate } from "react-router-dom";
+import "./Sidebar.scss";
 import { dashboardMenuState } from "../../atoms/Dashboard";
 import breifcase from "../../assets/icons/briefcase.png";
 import dashboard from "../../assets/icons/home.png";

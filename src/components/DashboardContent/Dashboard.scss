@@ -1,0 +1,43 @@
+.right-container {
+    height: auto;
+    width: 72%;
+    align-self: start;
+    margin-top: 3.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .right-container .heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #213f7d;
+    padding: 0;
+    margin: 0;
+  }
+  .right-container .no-content {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #213f7d;
+    font-weight: 500;
+    margin-top: 4rem;
+  }
+  @media (min-width: 2000px) {
+    .right-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  @media (max-width: 720px) {
+    .right-container .heading {
+      text-align: center;
+    }
+  }
+  
+  .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 75%;
+    margin-right: 3.75rem;
+    margin-top: 7rem;
+  }/*# sourceMappingURL=DashboardContent.css.map */

@@ -1,4 +1,5 @@
 import { useLocation, useNavigate } from "react-router-dom";
+import "./SidebarItems.scss";
 
 interface SidebarItemProps {
   title: string;

@@ -1,0 +1,100 @@
+.side-bar-container {
+    width: 17.6875rem;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+    padding-top: 2.5rem;
+    padding-bottom: 0.625rem;
+    min-width: 80px;
+  }
+  .side-bar-container .switch-organization {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding-left: 1.875rem;
+    margin-bottom: 2.625rem;
+  }
+  .side-bar-container .switch-organization .text {
+    font-size: 1rem;
+    color: #213f7d;
+    padding: 0;
+    margin: 0;
+  }
+  .side-bar-container .switch-organization .dropdown {
+    cursor: pointer;
+  }
+  .side-bar-container .title {
+    margin-top: 1.875rem;
+    margin-bottom: 0.625rem;
+    padding-left: 1.875rem;
+    color: #545f7d;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  .side-bar-container .grouping {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+  .side-bar-container .divider {
+    margin-top: 3.75rem;
+    border: 0.5px solid #213f7d;
+    opacity: 0.1;
+  }
+  .side-bar-container .logout {
+    color: #213f7d;
+    font-size: 1rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    display: flex;
+    gap: 0.625rem;
+    align-items: center;
+    padding-left: 1.875rem;
+    transition: all 0.2s ease-in-out;
+    margin: 1.25rem 0 2.5rem;
+  }
+  .side-bar-container .logout p {
+    padding: 0;
+    margin: 0;
+  }
+  .side-bar-container .logout:hover {
+    padding-left: 2.3rem;
+  }
+  .side-bar-container .version {
+    color: #213f7d;
+    padding-left: 1.875rem;
+    font-size: 0.75rem;
+  }
+  @media (max-width: 1100px) {
+    .side-bar-container .switch-organization {
+      padding-left: 0;
+      justify-content: center;
+    }
+    .side-bar-container .switch-organization .text {
+      display: none;
+    }
+  }
+  @media (max-width: 800px) {
+    .side-bar-container .title {
+      padding: 0;
+      text-align: center;
+      font-size: 0.625rem;
+    }
+  }
+  @media (max-width: 650px) {
+    .side-bar-container .logout {
+      padding-left: 0;
+      justify-content: center;
+    }
+    .side-bar-container .logout:hover {
+      padding-left: 1rem;
+    }
+    .side-bar-container .logout p {
+      display: none;
+    }
+    .side-bar-container .version {
+      padding-left: 0;
+      text-align: center;
+    }
+  }/*# sourceMappingURL=SideBar.css.map */
