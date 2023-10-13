@@ -8,6 +8,7 @@ import { useRecoilState } from "recoil";
 import UserDetailsNav from "../UserDetailsNav/UserDetailsNav.component";
 import UserActionButton from "../UserActionButton/UserActionButton.component";
 import "./UserDetail.scss";
+import { MdStarOutline, MdStar } from "react-icons/md"
 
 const UserDetail = () => {
   const [activeNav, setActiveNav] = useRecoilState(userDetailNavState);
@@ -61,9 +62,9 @@ const UserDetail = () => {
             <div className="users-tier">
               <p className="name">User's Tier</p>
               <div className="stars">
-                {/* <MdStar size={"1rem"} color="#E9B200" />
+                <MdStar size={"1rem"} color="#E9B200" />
                 <MdStarOutline size={"1rem"} color="#E9B200" />
-                <MdStarOutline size={"1rem"} color="#E9B200" /> */}
+                <MdStarOutline size={"1rem"} color="#E9B200" />
               </div>
             </div>
 
