@@ -7,7 +7,8 @@ Within the project's directory, you have the option to initiate the application 
 Yarn start
 This command activates the application in a developmental mode. You can access it within your browser at http://localhost:3000.
 
-You can also access the live deployment hosted on Vercel here.
+You can also access the live deployment hosted on Nelify here.
+https://otonye-amietubodie-lendsqr-fe-test.netlify.app/
 
 Utilized Libraries
 React Router Dom for facilitating page navigation and data retrieval (v6.6.1).
