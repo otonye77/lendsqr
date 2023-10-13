@@ -8,6 +8,11 @@ import {
     useGlobalFilter,
     usePagination,
   } from "react-table";
+  import {
+    MdOutlineMoreVert,
+    MdOutlineArrowBackIosNew,
+    MdArrowForwardIos,
+  } from "react-icons/md";
   import { useEffect, useMemo, useRef, useState, MutableRefObject } from "react";
   import { Filter } from "../Filter/Filter";
   import ColumnFilter from "../ColumnFilter/ColumnFilter";
@@ -16,6 +21,11 @@ import {
   import { modalFilterState, filterModalToggleState } from "../../atoms/Dashboard";
   import FilterModal from "../FilterModal/FilterModal.component";
   import "./UserTable.scss";
+  import FilterListIcon from '@mui/icons-material/FilterList';
+  import { IoEyeOutline } from "react-icons/io5";
+import { BiUserX } from "react-icons/bi";
+import { GrUserExpert } from "react-icons/gr";
+
 
 const UserTable = () => {
   const [actionModal, setActionModal] = useState(false);
@@ -53,6 +63,7 @@ const UserTable = () => {
     return {
       ...item,
       status: randomStatus,
+      icon: <MdOutlineMoreVert />,
     };
   });
 
@@ -141,9 +152,9 @@ const UserTable = () => {
                             });
                           }}
                         >
-                          {/* {column.render("Header") !== "" && (
-                            // <BiFilter size={"1rem"} />
-                          )} */}
+                          {column.render("Header") !== "" && (
+                            <FilterListIcon style={{fontSize: '15px'}}  />
+                          )}
                         </div>
                         <div className="hidden">
                           {column.canFilter ? column.render("Filter") : null}
@@ -211,18 +222,18 @@ const UserTable = () => {
                                       );
                                     }}
                                   >
-                                    {/* <IoEyeOutline
+                                    <IoEyeOutline
                                       color="#545F7D"
                                       size={"1.2rem"}
-                                    /> */}
+                                    />
                                     <p className="item">View Details</p>
                                   </div>
                                   <div className="icon-and-text">
-                                    {/* <BiUserX color="#545F7D" size={"1.2rem"} /> */}
+                                    <BiUserX color="#545F7D" size={"1.2rem"} />
                                     <p className="item">Blacklist User</p>
                                   </div>
                                   <div className="icon-and-text">
-                                    {/* <GrUserExpert color="#545F7D" /> */}
+                                    <GrUserExpert color="#545F7D" />
                                     <p className="item">Activate User</p>
                                   </div>
                                 </div>
@@ -277,7 +288,7 @@ const UserTable = () => {
                 onClick={() => previousPage()}
                 disabled={!canPreviousPage}
               >
-                {/* <MdOutlineArrowBackIosNew /> */}
+                <MdOutlineArrowBackIosNew />
               </button>
   
               <Pagination 
@@ -291,7 +302,7 @@ const UserTable = () => {
                 onClick={() => nextPage()}
                 disabled={!canNextPage}
               >
-                {/* <MdArrowForwardIos /> */}
+                <MdArrowForwardIos />
               </button>
             </div>
           </div>

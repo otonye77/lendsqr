@@ -4,6 +4,7 @@ import calender from "../../assets/icons/calender.png";
 import DatePicker from "react-datepicker";
 import { modalFilterState } from "../../atoms/Dashboard";
 import { useRecoilState } from "recoil";
+import "./FilterModal.scss"
 
 interface FilterModalProps {
     filterModal: any;
