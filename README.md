@@ -1,4 +1,4 @@
-Assessment for a Frontend Developer Position at Lendsqr
+# Lendsqr Frontend Engineer Assessment Test
 The initiation of this project was accomplished utilizing React and TypeScript.
 
 Execution Guidelines
