@@ -11,14 +11,14 @@ import Dashboard from './pages/Dashboard/Dashboard';
 import RootOutlet from './pages/RootOutlet/RootOutlet';
 import DashboardErrorPage from './pages/DashboardError/DashboardError';
 import UserDetails from './components/UserDetails/UserDetails.component';
-import { fetchSingleUser } from './api/api';
+import { fetchSingleUser, fetchUsers } from './api/api';
 
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path='/' element={<RootOutlet />}>
         <Route index element={<Login />} />
-        <Route path='/dashboard' element={<Dashboard />}  />
+        <Route path='/dashboard' loader={fetchUsers} element={<Dashboard />}  />
         <Route
           path="/user-details/:id"
           element={<UserDetails />}

@@ -1,3 +1,5 @@
+import './UserDetailsNav.scss';
+
 interface UserDetailsNavProps {
     title: string;
     active: string

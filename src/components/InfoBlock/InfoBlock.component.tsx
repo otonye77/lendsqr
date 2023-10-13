@@ -5,6 +5,7 @@ import {
     randomMaritalStatus,
     randomRelationship,
   } from "../../Utility/Utils";
+  import "./InfoBlock.scss";
 
   interface InfoBlockProps {
     gridColumns: number;
