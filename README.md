@@ -1,46 +1,30 @@
-# Getting Started with Create React App
+Assessment for a Frontend Developer Position at Lendsqr
+The initiation of this project was accomplished utilizing React and TypeScript.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Execution Guidelines
+Within the project's directory, you have the option to initiate the application by executing the following command:
 
-## Available Scripts
+Yarn start
+This command activates the application in a developmental mode. You can access it within your browser at http://localhost:3000.
 
-In the project directory, you can run:
+You can also access the live deployment hosted on Vercel here.
 
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Utilized Libraries
+React Router Dom for facilitating page navigation and data retrieval (v6.6.1).
+Scss for custom styling.
+React Table for creating the Dashboard Table.
+React spinners for displaying loader screens.
+Main Features
+The interface is fully responsive.
+The Dashboard table supports filtering, sorting, and pagination.
+Loader screens are displayed during data retrieval.
+Error pages are presented in case of any request-related errors.
+Navigating the Table
+To access the details of a specific user, simply click on the text within the Organization, Username, Email, or Phone Number columns for the corresponding row.
+Alternatively, you can utilize the action button located in the last column to access a user's detailed information. A modal will appear, and you can navigate to the user's details page by clicking the "View Details" button.
+To sort the table, click on the header of any column. You have the option to sort the table in ascending or descending order.
+Utilize the search input in the header to search for information within any column in the table.
+By clicking on the filter icon, you can filter the table. A modal will appear, and the table will be updated as you type or select an option. You can filter by organization, username, email, phone number, and status.
+To close the modal, simply click outside of it.
+Reset the table to its initial state by clicking on any filter icon.
+Use the pagination buttons to navigate through the table.
