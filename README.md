@@ -14,6 +14,7 @@ React Router Dom for facilitating page navigation and data retrieval (v6.6.1).
 Scss for custom styling.
 React Table for creating the Dashboard Table.
 React spinners for displaying loader screens.
+
 Main Features
 The interface is fully responsive.
 The Dashboard table supports filtering, sorting, and pagination.
